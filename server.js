@@ -15,10 +15,8 @@ app.listen(PORT, function(){
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
 
-// 起始ID
-var InitID = 2;
 
-
+//get put update delete
 app.get('/Todos',page.getAjax);
 
 app.post('/Todos',page.addAjax);
